@@ -12,7 +12,7 @@ import com.learn.demo.interfaces.FortuneService;
  * @author skj000b
  *
  */
-@Qualifier
+@Component
 public class RandomFortuneService implements FortuneService {
 
 	@Override

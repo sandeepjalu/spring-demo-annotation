@@ -12,7 +12,8 @@ import com.learn.demo.interfaces.FortuneService;
 public class TennisCoach implements Coach {
 
 	@Autowired
-	FortuneService fortuneService;
+	@Qualifier("happyFortuneService")
+	private FortuneService fortuneService;
 	
 	public TennisCoach() {
 		System.out.println(">>> default constractor TennisCoach");
